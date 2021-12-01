@@ -145,4 +145,4 @@ Once you **activate** a `virtualenv` you get standard naming:
 1. `python` always points to the correct python version for the project
 1. `pip` always points to the correct python version for the project
 
-![](./diagrams/multiple-projects.drawio.svg)
+![](./diagrams/virtualenv.drawio.svg)

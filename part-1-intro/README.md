@@ -1,5 +1,7 @@
 # Python Introduction
 
+> NOTE: the following assumes you are running on a unix-esque terminal. If you are windows, either use WSL2 Ubuntu, or Git Bash.
+
 ## Check Your Version
 
 Which version of Python do you have?
@@ -131,7 +133,7 @@ which pip
 /Users/you/example/venv/bin/pip
 ```
 
-## Pythons Everywhere!!
+### Pythons Everywhere!!
 
 Your computer may have or more Python versions installed:
 
@@ -146,3 +148,142 @@ Once you **activate** a `virtualenv` you get standard naming:
 1. `pip` always points to the correct python version for the project
 
 ![](./diagrams/virtualenv.drawio.svg)
+
+## Hello World
+
+Every time you create a python script, you are creating a `module`.  Let's create one:
+
+```
+echo "print('Hello World')" > hello.py
+```
+
+And run the file:
+
+```
+python -m hello
+```
+
+What does the `-m` flag do? According to `python --help` it allows you to:
+
+> run library module as a script
+
+So it:
+
+1. finds the module (aka file) named `hello.py`
+1. executes the code from top to bottom
+
+### Add `__pycache__` to gitignore
+
+When you run a python script with `-m` it creates a folder named `__pycache__` so let's add that to `.gitignore`:
+
+```
+echo __pycache__ >> .gitignore
+```
+
+## Importing
+
+You can import an entire other package like this:
+
+```
+import os
+```
+
+You can also import individual parts of a package like so:
+
+```
+from os import getenv
+```
+
+To demonstrate, run the following examples:
+
+First, create a new file called `print-env-1.py` like so:
+
+```
+cat <<EOF > print-env-1.py
+from os import environ
+
+print(environ)
+EOF
+```
+
+And run it like so:
+
+```
+python -m print-env-1.py
+```
+
+You should see your shell's environment variables printed on the screen.
+
+Next, create a file called `print-env-2.py` like so:
+
+```
+cat <<EOF > print-env-2.py
+import os
+
+print(os.environ)
+EOF
+```
+
+And run it like so:
+
+```
+python -m print-env-2.py
+```
+
+## Installing Packages
+
+There are a few ways to manage dependencies in your application:
+
+First, you can manually install packages with `pip install <package>`. This is the worst option as it means that every developer has to manually download each package on their own machine and manually ensure the versions are correct.
+
+Next, you can put your requirements in a `requirements.txt` file and install it like so:
+
+```
+pip install -r requirements.txt
+```
+
+Finally (and best) you can use a [`Pipfile`](https://github.com/pypa/pipfile). That's what we'll be doing here.
+
+### Install `pipenv`
+
+> NOTE: you'll do this from _within_ your activated `virtualenv`
+
+https://pipenv.pypa.io/en/stable/
+
+```
+pip install pipenv
+```
+
+### Install a package with pipenv
+
+You can install packages using `pip`, but if you instead use `pipenv` you get some extra benefits.
+
+To install a library run:
+
+```
+pipenv install requests
+```
+
+What just happened? `pipenv` did the following:
+
+1. created file named `Pipfile` that has the following contents:
+
+    ```
+    [[source]]
+    url = "https://pypi.org/simple"
+    verify_ssl = true
+    name = "pypi"
+
+    [packages]
+    requests = "*"
+
+    [dev-packages]
+
+    [requires]
+    python_version = "3.9"
+    ```
+
+1. Downloaded the `requests` package to your `venv` folder
+
+1. created a file named `Pipfile.lock` which contains a list of all the sub-dependencies of `requests` and their exact versions
+

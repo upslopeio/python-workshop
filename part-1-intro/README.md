@@ -135,7 +135,7 @@ which pip
 
 ### Pythons Everywhere!!
 
-Your computer may have or more Python versions installed:
+Your computer may have one or more Python versions installed:
 
 1. Python 2 (either `python` or `python2`)
 1. Python 3 (either `python` or `python3`)

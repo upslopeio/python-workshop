@@ -180,56 +180,6 @@ When you run a python script with `-m` it creates a folder named `__pycache__` s
 echo __pycache__ >> .gitignore
 ```
 
-## Importing
-
-You can import an entire other package like this:
-
-```
-import os
-```
-
-You can also import individual parts of a package like so:
-
-```
-from os import getenv
-```
-
-To demonstrate, run the following examples:
-
-First, create a new file called `print-env-1.py` like so:
-
-```
-cat <<EOF > print-env-1.py
-from os import environ
-
-print(environ)
-EOF
-```
-
-And run it like so:
-
-```
-python -m print-env-1.py
-```
-
-You should see your shell's environment variables printed on the screen.
-
-Next, create a file called `print-env-2.py` like so:
-
-```
-cat <<EOF > print-env-2.py
-import os
-
-print(os.environ)
-EOF
-```
-
-And run it like so:
-
-```
-python -m print-env-2.py
-```
-
 ## Installing Packages
 
 There are a few ways to manage dependencies in your application:
@@ -308,3 +258,69 @@ What just happened? `pipenv` did the following:
 
 1. created a file named `Pipfile.lock` which contains a list of all the sub-dependencies of `requests` and their exact versions
 
+## Importing
+
+You can import an entire other package like this:
+
+```
+import os
+```
+
+You can also import individual parts of a package like so:
+
+```
+from os import getenv
+```
+
+You can import from the [python standard library](https://docs.python.org/3/library/) or from packages you downloaded with `pipenv`
+
+### Examples
+
+To demonstrate, run the following examples:
+
+First, create a new file called `print-env-1.py` like so:
+
+```
+cat <<EOF > print-env-1.py
+from os import environ
+
+print(environ)
+EOF
+```
+
+And run it like so:
+
+```
+python -m print-env-1.py
+```
+
+You should see your shell's environment variables printed on the screen.
+
+Next, create a file called `print-env-2.py` like so:
+
+```
+cat <<EOF > print-env-2.py
+import os
+
+print(os.environ)
+EOF
+```
+
+And run it like so:
+
+```
+python -m print-env-2.py
+```
+
+## Challenge: Download a Web Page
+
+1. Create a python module named `download-example`
+1. Install the requests library with `pipenv` (if you haven't already)
+1. Import `requests`
+1. Follow the documentation on the [requests site](https://docs.python-requests.org/en/latest/user/quickstart/#make-a-request) and make a request to `http://example.com`
+1. Print the HTML of the page (hint, use `r.text`)
+1. Run the file
+
+## Next Steps
+
+Go to [LearnPython.org](https://www.learnpython.org/en/Variables_and_Types) and learn more about the Python language!

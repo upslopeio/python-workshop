@@ -234,21 +234,42 @@ python -m print-env-2.py
 
 There are a few ways to manage dependencies in your application:
 
-First, you can manually install packages with `pip install <package>`. This is the worst option as it means that every developer has to manually download each package on their own machine and manually ensure the versions are correct.
+**Manually Install (bad)**
 
-Next, you can put your requirements in a `requirements.txt` file and install it like so:
+You can manually install packages with `pip install <package>`. 
+
+This is the worst option as it means that every developer has to manually download each package on their own machine and manually ensure the versions are correct.
+
+**Use requirements.txt (better)**
+
+You can list your requirements in a `requirements.txt` file like so:
+
+```
+requests==2.26.0
+six==1.16.0
+urllib3==1.26.7
+```
+
+Then you can install all the dependencies at once with a single command:
 
 ```
 pip install -r requirements.txt
 ```
 
-Finally (and best) you can use a [`Pipfile`](https://github.com/pypa/pipfile). That's what we'll be doing here.
+This is a little better than manually adding packages, but has a few problems:
+
+- you need to specify your dev and prod dependencies in different files
+- you can't lock down the versions of sub-dependencies of packages, so you can still get slightly different results in different environments
+
+**Use pipenv**
+
+The best solution is to use a [`Pipfile`](https://github.com/pypa/pipfile). That's what we'll be doing here.
+
+https://pipenv.pypa.io/en/stable/
 
 ### Install `pipenv`
 
 > NOTE: you'll do this from _within_ your activated `virtualenv`
-
-https://pipenv.pypa.io/en/stable/
 
 ```
 pip install pipenv

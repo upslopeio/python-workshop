@@ -87,7 +87,7 @@ Follow these steps to actually make a request:
 
 ```python
 @app.get("/double/{number}")
-def read_item(number):
+def double(number):
     return {"number": number, "doubled": number * 2}
 ```
 
@@ -116,7 +116,7 @@ The way to fix that is to add type hints:
 
 ```python
 @app.get("/double/{number}")
-def read_item(number: int):
+def double(number: int):
     return {"number": number, "doubled": number * 2}
 ```
 
@@ -133,7 +133,32 @@ FastAPI relies heavily on using types, as you'll see.
 
 Try it out from the live docs as well!
 
-http://localhost:8000/docs#/default/read_item_double__number__get
+http://localhost:8000/docs#/default/double_double__number__get
 
 > NOTE: there's also another set of generated docs at http://127.0.0.1:8000/redoc
 
+## Challenges for GET requests
+
+First, create a new GET endpoint named `shout` that takes a string and returns a JSON object like with the uppercased string and an exclamation point. For example:
+
+If you go to http://localhost:8000/shout/hello you should see:
+
+```json
+{
+    "word": "hello", 
+    "shout": "HELLO!"
+}
+```
+
+Then, create a new GET endpoint named `opposite` that takes a boolean and returns a JSON object with the opposite of the value. For example:
+
+If you go to http://localhost:8000/opposite/true you should see:
+
+```json
+{
+    "value": true, 
+    "opposite": false
+}
+```
+
+> NOTE: you may have to Google how to uppercase a string, perform string concatenation, or use Python conditional statements (if statements).

@@ -57,7 +57,10 @@ def test_not_found_404():
 What just happened?
 
 - **`from fastapi.testclient import TestClient`** imports a class that allows you to make HTTP requests to your API using the `requests` library
-- **`from app.main import app`** imports your application. The way to interpret this is `app[./app folder].main[main.py file]:app[variable named app in main.py]`
+- **`from app.main import app`** imports your application. 
+  
+  The way to interpret this is `app[./app folder].main[main.py file]:app[variable named app in main.py]`
+
 - **`client = TestClient(app)`** instantiates a new test client, which you'll use in all of your tests
 
 All methods that start with `test_` will be run automatically by `pytest`.
@@ -132,7 +135,7 @@ http://localhost:8000/items?sort=name&dir=asc
 
 There are two query parameters there:
 - **sort** => name
-= **dir** => asc
+- **dir** => asc
 
 Use the `params` keyword argument of the test client to pass query parameters. It will format the URL correctly:
 
@@ -188,3 +191,23 @@ Basic authentication is a common way of securing endpoints, especially for inter
 response = client.get("/admin/items", auth=('some-username', 'some-password'))
 ```
 
+## Challenges
+
+1. Write 2 tests for the `home` method
+   1. Write one test with no `X-Forwarded-For` header
+   2. Write one test with an `X-Forwarded-For` header
+
+2. Write 2 tests for the `houses` method
+   1. Write one test with no `zip` query parameter
+   2. Write one test with a `zip` query parameter
+
+3. Write 2 tests for the `house` method
+   1. Write one test with a valid house number and check for a 200 response
+   2. Write one test with an invalid house number and check for a 404 response
+
+4. Write a test for the `create_house` method
+
+5. Write 3 tests for the `profile` method
+   1. Don't pass any credentials and assert that the response is a 401
+   2. Pass incorrect credentials and assert that the response is a 401
+   3. Pass correct credentials and assert that the response is a 200

@@ -29,6 +29,12 @@ Install the testing library `pytest` using `pipenv`:
 pipenv install pytest --dev
 ```
 
+When you run tests, `pytest` will create a `.pytest_cache` folder, so add that to your `.gitignore` file:
+
+```
+.pytest_cache
+```
+
 ## Create the test file
 
 Create a file named `app/main_test.py` (or it could be `app/test_main.py` if you prefer that).

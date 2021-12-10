@@ -1,0 +1,72 @@
+[
+    {
+        "address": "27703 Silas Lakes",
+        "city": "South Jamalton",
+        "state": "TN",
+        "zip": "81528",
+        "price": 420000
+    },
+    {
+        "address": "4740 Florentino Harbors",
+        "city": "South Dwaynetown",
+        "state": "OK",
+        "zip": "81528",
+        "price": 350000
+    },
+    {
+        "address": "1878 Huel Junctions",
+        "city": "Mosheberg",
+        "state": "CT",
+        "zip": "87665-4265",
+        "price": 410000
+    },
+    {
+        "address": "8769 Clint Land",
+        "city": "North Quintinside",
+        "state": "MD",
+        "zip": "78627-7953",
+        "price": 590000
+    },
+    {
+        "address": "64646 White Field",
+        "city": "Oberbrunnermouth",
+        "state": "NM",
+        "zip": "81528",
+        "price": 290000
+    },
+    {
+        "address": "6168 Murazik Lodge",
+        "city": "Lizabethstad",
+        "state": "AK",
+        "zip": "52525-6026",
+        "price": 570000
+    },
+    {
+        "address": "45077 Kuhlman Pass",
+        "city": "East Jenetteside",
+        "state": "AZ",
+        "zip": "81528",
+        "price": 410000
+    },
+    {
+        "address": "466 Kilback Island",
+        "city": "New Dexter",
+        "state": "GA",
+        "zip": "44323-4670",
+        "price": 580000
+    },
+    {
+        "address": "43422 June Estates",
+        "city": "Mrazview",
+        "state": "NY",
+        "zip": "56470",
+        "price": 470000
+    },
+    {
+        "address": "777 Deon Pines",
+        "city": "South Anhhaven",
+        "state": "MS",
+        "zip": "60549-6221",
+        "price": 630000
+    }
+]

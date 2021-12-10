@@ -195,19 +195,19 @@ response = client.get("/admin/items", auth=('some-username', 'some-password'))
 
 1. Write 2 tests for the `home` method
    1. Write one test with no `X-Forwarded-For` header
-   2. Write one test with an `X-Forwarded-For` header
+   1. Write one test with an `X-Forwarded-For` header
 
-2. Write 2 tests for the `houses` method
+1. Write 2 tests for the `houses` method
    1. Write one test with no `zip` query parameter
-   2. Write one test with a `zip` query parameter
+   1. Write one test with a `zip` query parameter
 
-3. Write 2 tests for the `house` method
+1. Write 2 tests for the `house` method
    1. Write one test with a valid house number and check for a 200 response
-   2. Write one test with an invalid house number and check for a 404 response
+   1. Write one test with an invalid house number and check for a 404 response
 
-4. Write a test for the `create_house` method
+1. Write a test for the `create_house` method
 
-5. Write 3 tests for the `profile` method
+1. Write 3 tests for the `profile` method
    1. Don't pass any credentials and assert that the response is a 401
-   2. Pass incorrect credentials and assert that the response is a 401
-   3. Pass correct credentials and assert that the response is a 200
+   1. Pass incorrect credentials and assert that the response is a 401
+   1. Pass correct credentials and assert that the response is a 200

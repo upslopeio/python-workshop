@@ -70,6 +70,8 @@ cd example
 
 ```
 virtualenv venv
+# or for windows
+# python3 -m virtualenv venv
 ```
 
 This creates a folder named `venv` that has files like this:
@@ -115,7 +117,11 @@ Now that it's installed, how do you use it?
 You can tell your terminal to use this `venv` version of Python like so:
 
 ```
+# mac / unix
 source venv/bin/activate
+
+# windows bash
+./venv/Scripts/activate
 ```
 
 You'll know that your terminal window is activated when you see `(venv)` in your terminal prompt:

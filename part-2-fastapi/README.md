@@ -7,10 +7,15 @@
 ```
 mkdir ~/fastapi-basics
 cd ~/fastapi-basics
+
+# mac
 virtualenv venv
-echo venv >> .gitignore
-echo __pycache__ >> .gitignore
 source venv/bin/activate
+
+# windows in Git Bash
+python -m virtualenv venv
+source venv/Scripts/activate
+
 pip install pipenv
 ```
 

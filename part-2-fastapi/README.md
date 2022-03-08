@@ -12,8 +12,7 @@ For this exercise:
 ## Create an empty python project
 
 ```
-mkdir ~/fastapi-basics
-cd ~/fastapi-basics
+cd ~/fastapi-sample-application
 
 # mac
 virtualenv venv

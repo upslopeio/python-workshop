@@ -2,6 +2,13 @@
 
 > NOTE: you can create a FastAPI app for AA within runway by choosing "Create and App" > "PythonFastAPI"
 
+For this exercise:
+
+1. Fork and clone this empty repository https://github.com/AAInternal/fastapi-sample-application
+2. Complete the challenges
+3. Commit / Push your changes
+4. Open a PR
+
 ## Create an empty python project
 
 ```

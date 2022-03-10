@@ -1,4 +1,4 @@
-## Specifying Path Parameters
+## FastAPI - Specifying Path Parameters
 
 In a URL, path starts with `/` and goes until the `?` or `#`
 
@@ -135,3 +135,4 @@ def subscription_status(user_id: int, subscription_id: str):
     return {"ok": True}
 ```
 
+[Next: Posting JSON Lists](./03-posting-json-lists.md)

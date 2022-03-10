@@ -1,4 +1,4 @@
-# Query Parameters
+# FastAPI - Query Parameters
 
 In a URL, the query parameters come after the `?` - for example:
 
@@ -65,3 +65,4 @@ def exponentiate(base: int, exponent: int):
 
 > NOTE: `base` and `exponent` can be any valid values
 
+[Next: Path Parameters](./02-path-parameters.md)

@@ -1,0 +1,114 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="718px" height="371px" viewBox="-0.5 -0.5 718 371" content="&lt;mxfile&gt;&lt;diagram id=&quot;Nw73tGKCDtQSYvZZydfw&quot; name=&quot;Page-1&quot;&gt;3ZZdb5swFIZ/DdJ2sQjbfLSXHU23m25RmdTLyoDB1oyNHCck/fWzgwlh0C7Tsl70AmG/5xx/nOfYsoeSevdF4Ybey4JwD/rFzkO3HoTAR775WWXfKZ+C6yjopEqxwrkNQsqeSR/r1A0ryHrkqKXkmjVjMZdCkFyPNKyUbMdupeTjWRtckYmQ5phP1UdWaNqpV6E/6F8Jq2g/M/Cdpca9sxPWFBeyPZHQ0kOJklJ3rXqXEG7T1+eli7t7wXpcmCJCnxMAu4At5hu3t3ucUyaIByNuRvicKdOqbGuqpMvkYfnjaXWTpo/fH25NfCllhpXbmt73+VJyIwpip/RNWEuZJmmDc2ttTY0Yjeqamx4wzVIKfYdrxm15JHKjGDEj+t9I64yuHkBo+pizSpgOJ6Vd0ZYozQynGydr2RxWftijsZHdi3kCx+ybwiWyJlrtjYsL6NG6kg3DwAntwD8G0QKGnUxP8KPY+WJXdtVx+IGMaTg486DQBFRKO4+WCVtC0P+gcfbxHEoZx9R+r3ACl+akctcN3pBaPADpwUVoCg7GM9SOyP+FWnBBalJTm+A/H8t3jxXF4CyuKPpfXMMJ19VeUymMtlIyJ+v1eaA6Zd1g8fppNeNutiyXSvQxZoWnYe/wykVXaBH/Tvl6hjKAixnO4BK3bjThvCBia58MzCTaGhTDGSczuGdA4uc3PJpmhTyRXKrDRKgsS5jntti0kj/JiaWIsiiMLsMsgGgB0JhZHM/cuNYPTqFFf8/MdIfn0sF28uxEy18=&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <rect x="0" y="0" width="716.25" height="370" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 714px; height: 1px; padding-top: 7px; margin-left: 2px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
+                            <div style="display: inline-block; font-size: 15px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                Machine
+                                <br/>
+                                <br/>
+                                SECRET_PASSWORD=foobar
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="2" y="22" fill="rgb(0, 0, 0)" font-family="Courier New" font-size="15px">
+                    Machine...
+                </text>
+            </switch>
+        </g>
+        <rect x="26.25" y="90" width="275" height="250" rx="10" ry="10" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 273px; height: 1px; padding-top: 97px; margin-left: 28px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
+                            <div style="display: inline-block; font-size: 15px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                Shell window (tab)
+                                <br/>
+                                SECRET_PASSWORD=blahblah
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="28" y="112" fill="rgb(0, 0, 0)" font-family="Courier New" font-size="15px">
+                    Shell window (tab)...
+                </text>
+            </switch>
+        </g>
+        <rect x="321.25" y="90" width="365" height="250" rx="10" ry="10" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 363px; height: 1px; padding-top: 97px; margin-left: 323px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
+                            <div style="display: inline-block; font-size: 15px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                Shell window (tab)
+                                <br/>
+                                SECRET_PASSWORD=other
+                                <br/>
+                                <br/>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="323" y="112" fill="rgb(0, 0, 0)" font-family="Courier New" font-size="15px">
+                    Shell window (tab)...
+                </text>
+            </switch>
+        </g>
+        <rect x="333.75" y="150" width="312.5" height="170" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 311px; height: 1px; padding-top: 157px; margin-left: 336px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
+                            <div style="display: inline-block; font-size: 15px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                Python Process
+                                <br/>
+                                <br/>
+                                <span>
+                                    SECRET_PASSWORD=blah uvicorn
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="336" y="172" fill="rgb(0, 0, 0)" font-family="Courier New" font-size="15px">
+                    Python Process...
+                </text>
+            </switch>
+        </g>
+        <rect x="373.13" y="230" width="223.12" height="60" rx="9" ry="9" fill="#fff2cc" stroke="#d6b656" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 221px; height: 1px; padding-top: 260px; margin-left: 374px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 15px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                .env file variables
+                                <br/>
+                                SECRET_PASSWORD=baz
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="485" y="265" fill="rgb(0, 0, 0)" font-family="Courier New" font-size="15px" text-anchor="middle">
+                    .env file variables...
+                </text>
+            </switch>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Viewer does not support full SVG 1.1
+            </text>
+        </a>
+    </switch>
+</svg>

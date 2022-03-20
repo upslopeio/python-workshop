@@ -70,8 +70,51 @@ Then you should see:
 
 FastAPI parses the JSON, and creates python objects for you that match the schema you defined in the Pydantic model!
 
+## What's happening under the hood?
 
-### Camel vs Snake Case
+Imagine you have the following app:
+
+```py
+class VoterData(BaseModel):
+    firstName: Optional[str]
+    lastName: str
+    age: int
+    voted: bool
+
+
+class VoterResponse(BaseModel):
+    fullName: str
+    eligible: bool
+    data: VoterData
+
+
+@app.post("/voter-data", response_model=VoterResponse)
+def voter_data(data: VoterData):
+    return {
+        "fullName": data.firstName + " " + data.lastName,
+        "eligible": not data.voted,
+        "data": data
+    }
+```
+
+What does FastAPI do when you make a POST request to `/voter-data`?
+
+- parses the HTTP request
+- looks at the VERB of the HTTP request (`POST`)
+- looks at the path (liek `/voter-data`)
+- looks at the decorators to see if there is a mapping for `@app.[VERB](PATH)`
+- sees that there is one, and it points to the `voter_data` function
+- looks at `voter_data` parameters
+  - sees 1 parameter named `data`
+  - there's no `{data}` in the path - so it's not a path parameter
+  - it sees that data is a non-scalar type, so it guesses it's a body and parses the body
+- parsed the JSON from the post request
+- instantiated a `VoterData` class
+- mapped the values of the JSON payload to the properties of the class
+- called the `voter_data` method and passed the instance of the `VoterData` class to the method
+
+
+## Camel vs Snake Case
 
 Camel case has no spaces, and capitalizes the first letter of every word, like `firstName`.
 
@@ -124,3 +167,101 @@ def average(numbers: list[int]):
 def average(person: Person):
     return {"greeting": f"Hello {person.firstName} {person.lastName}! How's {person.address.city}?"}
 ```
+
+## Summary
+
+To define what type of data a user should send to your app:
+
+1. define a class that inherits from pydantic BaseModel
+2. define your json properties as fields
+3. pass that type into your FastAPI endpoint
+
+To define what type of data your app will return to a user
+
+1. define a class that inherits from pydantic BaseModel
+2. define your fields
+3. pass that type into the `response_model` argument of the decorator (`@app.get` etc...)
+
+## Challenge
+
+In your FastAPI application create an endpoint that responds
+to a POST to /address that takes this JSON object:
+
+```json
+{
+    "city": "New York",
+    "state": "NY",
+    "zip": "12345"
+}
+```
+
+and returns `{"formatted": "New York, NY 12345"}`
+
+## Challenge
+
+In your FastAPI application create an endpoint that responds
+to a POST to /personal-address that takes this JSON object:
+
+```json
+{
+    "firstName": "Tom",
+    "active": true,
+    "address": {
+        "city": "New York",
+        "state": "NY",
+        "zip": "12345"
+    }
+}
+```
+
+and returns 
+
+```json
+{"formatted": "Tom (active) - New York, NY 12345"}
+```
+
+OR if it's inactive:
+
+```json
+{"formatted": "Tom (inactive) - New York, NY 12345"}
+```
+
+## Pydantic Schema Challenge
+
+From https://docs.github.com/en/rest/reference/codes-of-conduct
+
+Write a pydantic model that would parse this JSON:
+
+```json
+ {
+  "key": "contributor_covenant",
+  "name": "Contributor Covenant",
+  "url": "https://api.github.com/codes_of_conduct/contributor_covenant",
+  "body": "some long text here",
+  "html_url": "http://contributor-covenant.org/version/1/4/"
+}
+```
+
+## Pydantic Shchema Challenge
+
+From https://docs.github.com/en/rest/reference/codes-of-conduct
+
+Write a pydantic modelt hat would parse this JSON:
+
+```json
+[
+  {
+    "key": "citizen_code_of_conduct",
+    "name": "Citizen Code of Conduct",
+    "url": "https://api.github.com/codes_of_conduct/citizen_code_of_conduct",
+    "html_url": "http://citizencodeofconduct.org/"
+  },
+  {
+    "key": "contributor_covenant",
+    "name": "Contributor Covenant",
+    "url": "https://api.github.com/codes_of_conduct/contributor_covenant",
+    "html_url": "https://www.contributor-covenant.org/version/2/0/code_of_conduct/"
+  }
+]
+```
+

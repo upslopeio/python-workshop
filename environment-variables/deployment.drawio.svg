@@ -1,0 +1,79 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="829px" height="271px" viewBox="-0.5 -0.5 829 271" content="&lt;mxfile&gt;&lt;diagram id=&quot;S9e4EX9zDVsVU3NxI_h2&quot; name=&quot;Page-1&quot;&gt;zVfLcpswFP0az7SLMpiX7WX8SLtIk0wz06ZLGa5BjUCMLGzTr++VEGDASZyJZ5pNonvQ1eOcI1155C7Sw1dB8uQ7j4CNHDs6jNzlyHHGtmvjP4WUFfLFmwVeBcWCRqZbCzzQv1DnGrSgEWw7HSXnTNK8C4Y8yyCUHYwIwffdbhvOurPmJIYB8BASNkR/0UgmFTr17Rb/BjRO6pnHtvmSkrqzAbYJifj+CHJXI3chOJdVKz0sgCn6al6qvOtnvjYLE5DJcxKcKmFHWGH2dsNxnwitst3ICRiOMl8LbMWqNUQ+CSDRFvtboBLsDUWScEBKlMJcIvrZbFWWNX+CF1kEagk2DrFPqISHnITq6x49g1giU4bRGJsbnslrklKm7LLghaCAs9u3sDcfjT/Gvl6g3g4ICYdnKRk3RKNHgacgRYldTEJtT+POwK3F27dSu4HBkiOZm0xi7BU3Y7cKYMOIcFoQdyDIEnLGS2TrbE1+oCTYW0BcMKK4Wt3+PKHcFkIBErVbVEdlQ+OU5CZG3SzLGkqHq8VThsEcrZsrMGS8iD6ejN5sYvldJZ3puUr6F1DSGyg5ILOmMMNz8jqDaxI+xfro3BWS0QwMHhHxdIdZVKqN2pbtv5XurWkHl6F+POsdIS8YEu85tTzHzAcXIN4fmjbC69uEXMiExzwjbNWi87AQO30hKUK711ObcMN5brr8ASlLQyEpJO8qhTyJ8lGL4dfhbzOcDpaHTlSa6G2iScGfmvqjpz1Q+VgPjG09peV5UxO3s6qgPAruQVDkGWersIpBRdvLFkCWcZWh6TUxpZiIGOqTdNooAhiRdNcd/T2aBx9J88Dpqm45r+iuo74GlzKDNZvNOoZwJ7P/Zwj3nYbQqVdCkPKoQ85ppgpZM/K9AtoLKXD7lSCYdp9FvYRJXYefScBGtYbWnM1mzvLrZFAcdI1GQFCy1k+ojKSgHlZpsVUrWytMJurvFr8M/I7Xtew6kjAaZ6pAo0RKyLm61Cm+7q7Mh5RGkT4JArAC6GkrtQ2fOK4/H/lLNRb6va4Sjd0WnHGhy5eqRXN8+rE+1LPpi56+QOXBN3hftxMl3z1V8t9eeDBsH+qVB9ofPO7qHw==&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <rect x="0" y="40" width="360" height="230" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 358px; height: 1px; padding-top: 155px; margin-left: 1px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 15px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                Local Env
+                                <br/>
+                                <br/>
+                                (reads .env file via dotenv)
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="180" y="160" fill="rgb(0, 0, 0)" font-family="Courier New" font-size="15px" text-anchor="middle">
+                    Local Env...
+                </text>
+            </switch>
+        </g>
+        <path d="M 557.5 82.5 C 485.5 82.5 467.5 145 525.1 157.5 C 467.5 185 532.3 245 579.1 220 C 611.5 270 719.5 270 755.5 220 C 827.5 220 827.5 170 782.5 145 C 827.5 95 755.5 45 692.5 70 C 647.5 32.5 575.5 32.5 557.5 82.5 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 358px; height: 1px; padding-top: 145px; margin-left: 469px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 15px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                Deployed Env
+                                <br/>
+                                <br/>
+                                Read regular ENV
+                                <br/>
+                                (secrets, configmaps, env...)
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="648" y="150" fill="rgb(0, 0, 0)" font-family="Courier New" font-size="15px" text-anchor="middle">
+                    Deployed Env...
+                </text>
+            </switch>
+        </g>
+        <path d="M 160 200 L 186.5 200 L 202.5 216 L 202.5 260 L 160 260 L 160 200 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 186.5 200 L 186.5 216 L 202.5 216 Z" fill-opacity="0.05" fill="#000000" stroke="none" pointer-events="all"/>
+        <path d="M 186.5 200 L 186.5 216 L 202.5 216" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 255 8.96 Q 180 9 180 33.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 180 38.88 L 176.5 31.88 L 180 33.63 L 183.5 31.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 584.67 7.58 Q 605 7.6 648.75 7.8 Q 692.5 8 692.5 63.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 692.5 68.88 L 689 61.88 L 692.5 63.63 L 696 61.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <rect x="255" y="0" width="330" height="20" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 10px; margin-left: 420px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 15px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                ENV variable names must be the same
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="420" y="15" fill="rgb(0, 0, 0)" font-family="Courier New" font-size="15px" text-anchor="middle">
+                    ENV variable names must be the same
+                </text>
+            </switch>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Viewer does not support full SVG 1.1
+            </text>
+        </a>
+    </switch>
+</svg>

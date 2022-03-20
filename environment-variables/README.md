@@ -12,6 +12,8 @@ There are several ways you can set env variables:
 1. For one command
     - `FOO=bar uvicorn main:app --reload`
 
+![](./env-variables.drawio.svg)
+
 ## Reading from the terminal
 
 There are two ways you can see environment variables from your terminal:
@@ -69,6 +71,8 @@ pip install -r requirements.txt
 
 Then write a file named `.env` and put environments variables in (see docs for examples).
 
+Add `.env` to your gitignore file because it will contain passwords.
+
 ## Using dotenv with uvicorn
 
 If you have `dotenv` installed, then you can tell `uvicorn` to use it:
@@ -76,3 +80,9 @@ If you have `dotenv` installed, then you can tell `uvicorn` to use it:
 ```
 uvicorn main:app --reload --env-file=.env
 ```
+
+## dotenv and deployment
+
+You do _not_ need to deploy your `.env` file, or have `dotenv` installed in your "production" dependencies. It's just used for development.
+
+![](./deployment.drawio.svg)
